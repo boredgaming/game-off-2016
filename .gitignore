@@ -1,0 +1,5 @@
+# Jetbrains config files
+.idea
+
+# Node stuff
+node_modules/
