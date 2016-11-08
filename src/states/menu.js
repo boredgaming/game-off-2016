@@ -2,9 +2,13 @@ import { game } from '../lib/game.js';
 
 const menuState = {
   create: function create() {
-    // We don't have anything to do yet, just go to the next state.
-    game.state.start('game');
+    let button = game.add.button(game.world.centerX, game.world.centerY, 'button', click, this, 2, 1, 0);
+    button.anchor.setTo(0.5);
   }
 };
+
+function click() {
+  game.state.start('game');
+}
 
 export default menuState;

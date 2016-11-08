@@ -2,8 +2,13 @@ import { game } from '../lib/game.js';
 
 const gameState = {
   create: function create() {
-    // We don't have anything to do yet, just go to the next state.
-    game.state.start('end');
+    let style = { font: "65px Arial", fill: "#ff0044", align: "center" };
+    let text = game.add.text(game.world.centerX, game.world.centerY, "Five second game state", style);
+    text.anchor.set(0.5);
+
+    setTimeout(function () {
+      game.state.start('end');
+    }, 5000);
   }
 };
 
