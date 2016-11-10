@@ -7,6 +7,8 @@ import bootState from './states/boot';
 import loaderState from './states/loader';
 import menuState from './states/menu';
 import gameState from './states/game';
+import introState from './states/intro';
+import forumState from './states/forum';
 import endState from './states/end';
 
 let game = setUpGame();
@@ -16,6 +18,8 @@ game.state.add('boot', bootState);
 game.state.add('load', loaderState);
 game.state.add('menu', menuState);
 game.state.add('game', gameState);
+game.state.add('intro', introState);
+game.state.add('forum', forumState);
 game.state.add('end', endState);
 
 // Start your engines! (Get it? Like game engines...)

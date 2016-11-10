@@ -4,7 +4,7 @@ import startButton from '../../public/img/start.svg'; // I fucking love webpack!
 const loaderState = {
   preload: function() {
     // Load assets
-    game.load.image('button', startButton, 90,90);
+    game.load.image('button', startButton);
   },
   create: function create() {
     // Go to the menu

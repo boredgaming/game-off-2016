@@ -1,4 +1,5 @@
 import { game } from '../lib/game.js';
+import dataStore from '../lib/dataStore';
 
 const menuState = {
   create: function create() {
